@@ -1,3 +1,16 @@
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #003b6f;  /* nova cor (escuro azul-cinza) */
+    margin: 0;
+    padding: 0;
+    color: #003b6f; /* texto claro para contraste */
+    overflow-x: hidden;
+    text-align: justify;
+}
+
+
+
 .container{display: flex;
     align-items: center;
     flex-direction: row;
@@ -16,6 +29,11 @@ justify-content: center;}
     top: 20px; }
 /* Seletores simples */
 
+.gra img{
+    border: 2px solid #0057b7;
+    object-fit: cover;
+    border-radius: 16px;
+}
 .cabecalho{
     background-color: white;
     width:5000px;
@@ -28,7 +46,7 @@ justify-content: center;}
 
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: rgb(221, 221, 221);
+    background-color: 003b6f;
     margin: 0;
     padding: 0;
     color: #222;
@@ -36,13 +54,25 @@ body {
     text-align: justify;
     
 }
-h1, h2 {
-    color: #0057b7;
+h1 {
+    color: #fff;
     font-family: 'Segoe UI', Arial, sans-serif;
+}
+h2 {
+    color: #0057b7
 }
 
 /* Agrupamento de seletores */
-a, p {
+ p {
+    color: white;
+    font-size: 1.1em;
+    margin: 8px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+     color: #0057b7;
     font-size: 1.1em;
     margin: 8px;
 }
@@ -138,9 +168,16 @@ a, p {
 .disney{
     display: flex;
     height: 200px;
+    border-radius: 16px;
 }
 
-.sidney{
+.disney img{object-fit: cover;
+border-radius: 16px;
+border: 2px solid #0057b7;}
+
+.sidney img{
+    border: 2px solid #0057b7;
+    border-radius: 16px;
     display: flex;
     position: relative;
     height: 300px;
@@ -152,9 +189,7 @@ a, p {
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-style: oblique;
-    font-weight: 500;
-    color: #0057b7;
+
 }
 .memorial p {
     display: flex;
@@ -175,36 +210,12 @@ a, p {
     
 
 }
-
-.primeiro a,
-.primeiro a:link,
-.primeiro a:visited,
-.primeiro a:hover,
-.primeiro a:active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.primeiro{
+    width: 330px;
+    height: 75px;
     align-items: center;
-    text-align: center;
-    width: 310px; /* igual à .centro — troque para 390px se preferir igual a .final */
-    height: 75px; /* igual às outras caixas */
-    margin: 0 8px;
-    top: 0; /* remove deslocamento */
-    font-weight: bold;
-    font-size: 25px;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 100%;
+
 }
-
-
-
-.primeiro a:hover{
-    background: rgba(0,87,183,0.08);
-    text-decoration: none;
-    transform: translateY(-3px);
-}
-
 
 .final h2{
     margin-top: -15px;
@@ -249,8 +260,13 @@ a, p {
     margin: 0; 
 }
 
-.resumo{
-    color: #0057b7;
-    font-style: italic;
-    font-weight: 600;
+.doutora{
+    display: flex; 
 }
+
+.doutora img {
+
+    object-fit: cover;      /* mantém o corte correto da imagem */
+    border-radius: 16px;     /* deixa circular */
+    display: block;
+    border: 2px solid #0057b7;}
